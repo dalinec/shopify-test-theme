@@ -22,7 +22,10 @@ const NewsletterForm: React.FC = () => {
     const { id, value } = event.target;
     setFormData((prevState) => ({
       ...prevState,
-      [id]: value,
+      customer: {
+        ...prevState.customer,
+        [id]: value,
+      },
     }));
   };
 
@@ -33,6 +36,8 @@ const NewsletterForm: React.FC = () => {
     setIsLoading(true);
     setError(null);
     setSuccess(null);
+
+    console.log(formData);
 
     try {
       const response = await fetch(
