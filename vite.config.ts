@@ -8,7 +8,9 @@ export default defineConfig({
     watch: {},
     rollupOptions: {
       input: {
-        counter: 'src/main.tsx',
+        counter: 'src/components/counter/main.tsx',
+        'add-to-cart-button': 'src/components/add-to-cart-button/main.tsx',
+        newsletter: 'src/components/newsletter/main.tsx',
       },
       output: {
         dir: 'assets',

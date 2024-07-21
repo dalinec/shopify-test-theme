@@ -1,6 +1,6 @@
 src/
 public/
-.eslintrc.cjs
+.eslintrc.json
 .gitignore
 index.html
 package-lock.json

@@ -1,2 +1,4 @@
 [environments.development]
 store = "https://test3-storepls.myshopify.com/"
+
+scopes=['write_customers,read_customers']

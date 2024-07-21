@@ -30,6 +30,7 @@
   id="Banner-{{ section.id }}"
   class="email-signup-banner banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.image_height == 'adapt-image' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}"
 >
+  asd
   {%- if section.settings.show_background_image -%}
     <div class="banner__media{% if section.settings.image != blank %} media{% endif %}">
       {%- if section.settings.image != blank -%}
@@ -93,12 +94,21 @@
                       {% elsif form.posted_successfully? %}
                         aria-describedby="Newsletter-success--{{ section.id }}"
                       {% endif %}
-                      placeholder="{{ 'newsletter.label' | t }}"
+                      placeholder="asd"
                       required
                     >
                     <label class="field__label" for="NewsletterForm--{{ section.id }}">
                       {{ 'newsletter.label' | t }}
                     </label>
+                    <div class="first-name">
+                      <label for="first-name">First name</label>
+                      <input type="text" name="customer[first_name]">
+                    </div>
+
+                    <div class="last-name">
+                      <label for="last-name">Last name</label>
+                      <input type="text" name="customer[last_name]">
+                    </div>
                     <button
                       type="submit"
                       class="newsletter-form__button field__button"
@@ -392,7 +402,6 @@
         }
       ]
     }
-  ],
-  "templates": ["password"]
+  ]
 }
 {% endschema %}
