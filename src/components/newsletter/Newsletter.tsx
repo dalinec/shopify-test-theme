@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 
 // Define the type for form data
 interface FormData {
-  name: string;
-  email: string;
+  customer: {
+    name: string;
+    email: string;
+  };
 }
 
 const NewsletterForm: React.FC = () => {
   // Initialize formData with proper type
-  const [formData, setFormData] = useState<FormData>({ name: '', email: '' });
+  const [formData, setFormData] = useState<FormData>({
+    customer: { name: '', email: '' },
+  });
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
@@ -65,7 +69,7 @@ const NewsletterForm: React.FC = () => {
           <input
             type='text'
             id='name'
-            value={formData.name}
+            value={formData.customer.name}
             onChange={handleChange}
             required
           />
@@ -75,7 +79,7 @@ const NewsletterForm: React.FC = () => {
           <input
             type='email'
             id='email'
-            value={formData.email}
+            value={formData.customer.email}
             onChange={handleChange}
             required
           />
