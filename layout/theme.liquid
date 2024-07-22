@@ -319,6 +319,31 @@
         }, 2000);
       }); {% endcomment %}
 
+      function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+      }
+    
+      const isSubscribed = getCookie('newsletter_subscribed');
+      const isClosed = getCookie('newsletter_closed');
+    
+      // If either cookie is present, hide the #framework-snippet
+      if (!isSubscribed && !isClosed) {
+        setTimeout(function () {
+          const newsletter = document.getElementById('framework-snippet');
+          if (newsletter) {
+            newsletter.style.opacity = '1';
+          }
+        }, 2000);
+      } else {
+        // Hide the #framework-snippet element immediately
+        const newsletter = document.getElementById('framework-snippet');
+        if (newsletter) {
+          newsletter.style.opacity = '0';
+        }
+      }
+
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',

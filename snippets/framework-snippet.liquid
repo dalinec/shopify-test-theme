@@ -11,7 +11,7 @@
     "{{ 'vite-newsletter.js' | asset_url }}",
   ];
 
-  function getCookie(name) {
+  {% comment %} function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
@@ -34,7 +34,7 @@
     if (newsletter) {
       newsletter.style.opacity = '0';
     }
-  }
+  } {% endcomment %}
   {% if template.name == 'product' %}
     scripts.push("{{ 'vite-add-to-cart-button.js' | asset_url }}");
   {% endif %}
