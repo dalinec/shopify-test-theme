@@ -90,7 +90,10 @@ const NewsletterForm: React.FC = () => {
         <button onClick={handleClose} className='close-button-mobile'>
           x
         </button>
-        <img src='/assets/img.png' alt='img' />
+        <img
+          src='https://cdn.shopify.com/s/files/1/0860/8596/0011/files/img.png?v=1721657763'
+          alt='img'
+        />
       </div>
       {/* Right section */}
       <div className='newsletter-form__right'>
