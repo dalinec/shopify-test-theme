@@ -90,7 +90,7 @@ const NewsletterForm: React.FC = () => {
         <button onClick={handleClose} className='close-button-mobile'>
           x
         </button>
-        <img src='/assets/vite-img.png' alt='img' />
+        <img src='/assets/img.png' alt='img' />
       </div>
       {/* Right section */}
       <div className='newsletter-form__right'>
