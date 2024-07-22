@@ -215,6 +215,10 @@ input[type='checkbox'] {
     margin-bottom: 0;
     font-size: 10px;
   }
+
+  .checkbox-container {
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 466px) {
