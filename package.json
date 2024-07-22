@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
     "@shopify/shopify-api": "^11.1.0",
     "axios": "^1.7.2",
     "cookie-parser": "^1.4.6",
     "express": "^4.19.2",
-    "react": "^18.3.1"
+    "react": "^18.3.1",
+    "react-hook-form": "^7.52.1",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
