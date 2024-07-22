@@ -32,14 +32,13 @@
     // Hide the #framework-snippet element immediately
     const newsletter = document.getElementById('framework-snippet');
     if (newsletter) {
-      newsletter.style.display = 'none';
+      newsletter.style.opacity = '0';
     }
   }
   {% if template.name == 'product' %}
     scripts.push("{{ 'vite-add-to-cart-button.js' | asset_url }}");
   {% endif %}
 
-  console.log(scripts);
 
   const observer = new IntersectionObserver((entries, observer) => {
     if(entries[0].isIntersecting) {
