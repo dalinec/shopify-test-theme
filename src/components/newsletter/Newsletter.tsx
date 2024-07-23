@@ -100,7 +100,9 @@ const NewsletterForm: React.FC = () => {
         <button onClick={handleClose} className='close-button-desktop'>
           x
         </button>
-        <h2>10% Zľava na PRVÚ OBJEDNÁVKU</h2>
+        <h2>
+          10% Zľava na <span>PRVÚ OBJEDNÁVKU</span>
+        </h2>
         <p>
           Chceš 10% zľavu na prvú objdenávku? Zadaj email a užívaj si krásne
           vlasy teraz ešte lacnejšie!

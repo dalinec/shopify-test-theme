@@ -3652,3 +3652,67 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+@font-face {
+  font-family: 'NT Mikella';
+  src: url('./NTMikellaBold.woff2') format('woff2'),
+    url('./NTMikellaBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NT Mikella';
+  src: url('./NTMikellaRegular.woff2') format('woff2'),
+    url('./NTMikellaRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MonumentGrotesk';
+  src: url('./MonumentGrotesk-Bold.woff2') format('woff2'),
+    url('./MonumentGrotesk-Bold.woff') format('woff');
+  font-weight: 900;
+  font-style: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MonumentGrotesk';
+  src: url('./MonumentGrotesk-Medium.woff2') format('woff2'),
+    url('./MonumentGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MonumentGrotesk';
+  src: url('./MonumentGrotesk-Regular.woff2') format('woff2'),
+    url('./MonumentGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MonumentGrotesk';
+  src: url('./MonumentGrotesk-Heavy.woff2') format('woff2'),
+    url('./MonumentGrotesk-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.newsletter-form__right {
+  font-family: 'MonumentGrotesk';
+}
+
+.newsletter-form__right h2 {
+  font-family: 'NT Mikella';
+  font-weight: bold;
+}
+.newsletter-form__right h2 > span {
+  font-family: 'MonumentGrotesk';
+  font-weight: 900;
+  letter-spacing: -2px;
+}
