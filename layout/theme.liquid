@@ -324,14 +324,16 @@
         setTimeout(function () {
           const newsletter = document.getElementById('framework-snippet');
           if (newsletter) {
-            newsletter.style.opacity = '1';
+            newsletter.style.display = 'flex';
+            setTimeout(() => {
+              newsletter.style.opacity = '1';
+            }, 50);
           }
         }, 10000);
       } else {
-        // Hide the #framework-snippet element immediately
         const newsletter = document.getElementById('framework-snippet');
         if (newsletter) {
-          newsletter.style.opacity = '0';
+          newsletter.style.display = 'none';
         }
       }
 

@@ -4,7 +4,7 @@
   min-width: 100vw;
   height: 100vh;
   text-align: center;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -13,7 +13,8 @@
   left: 0;
   z-index: 1200;
   opacity: 0;
-  transition: all linear 0.3s;
+  display: none;
+  transition: opacity 0.3s ease;
 }
 
 #framework-snippet #root {
