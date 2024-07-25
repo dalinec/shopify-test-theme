@@ -4,7 +4,6 @@
   min-width: 100vw;
   height: 100vh;
   text-align: center;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -34,6 +33,12 @@
   border-radius: 10px;
   overflow: hidden;
   align-items: center;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .newsletter-form__right h2 {
@@ -66,11 +71,6 @@
   flex: 1;
   padding: 20px 30px;
   box-sizing: border-box;
-}
-.newsletter-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
 .newsletter-form__right .close-button-desktop,
@@ -166,8 +166,8 @@ input[type='checkbox'] {
   .close-button-mobile {
     display: block;
     color: #393939;
-    top: 30px;
-    right: 20px;
+    top: 40px;
+    right: 10px;
   }
   .newsletter-form__wrapper {
     flex-direction: column;
@@ -205,6 +205,7 @@ input[type='checkbox'] {
 
   .newsletter-form__right p {
     font-size: 14px;
+    margin-top: 0 !important;
   }
   .newsletter-input-field_wrapper input[type='text'],
   .newsletter-input-field_wrapper input[type='email'] {
@@ -219,6 +220,10 @@ input[type='checkbox'] {
 
   .checkbox-container {
     margin-right: auto;
+  }
+
+  button[type='submit'] {
+    padding: 15px;
   }
 }
 
@@ -261,7 +266,7 @@ input[type='checkbox'] {
   width: 8px;
   height: 8px;
   border-radius: 100%;
-  background-color: #f50d3a; /* Dot color */
+  background-color: #f50d3a; /* actual dot color */
   transform: scale(0.4);
   transition: all 0.3s ease;
 }

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import './newsletter.css';
 
 const schema = z.object({
   name: z.string().min(1, 'Name is required'),
