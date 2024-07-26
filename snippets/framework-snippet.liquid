@@ -11,9 +11,9 @@
   ];
 
 
-  {% if template.name == 'product' %}
+  {% comment %} {% if template.name == 'product' %}
     scripts.push("{{ 'vite-add-to-cart-button.js' | asset_url }}");
-  {% endif %}
+  {% endif %} {% endcomment %}
 
 
   const observer = new IntersectionObserver((entries, observer) => {

@@ -61,10 +61,10 @@ const NewsletterForm: React.FC = () => {
           handleClose();
         }, 2000);
       } else {
-        setError(result.message || 'Failed to create customer.');
+        setError(result.message || 'Failed to subscribe.');
       }
     } catch (error: any) {
-      setError('Error creating customer: ' + error.message);
+      setError('Error with subscribing: ' + error.message);
     } finally {
       setIsLoading(false);
     }
